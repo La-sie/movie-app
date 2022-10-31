@@ -3,8 +3,8 @@
 }
 
 :root{
-  --primary-color: #22254b;
-  --secondary-color : #373b69;
+  --primary-color: #a03535;
+  --secondary-color : #131212;
 }
 
 body{
@@ -18,6 +18,39 @@ header{
     display: flex;
     justify-content: center;
     background-color: var(--secondary-color);
+    position: sticky;
+}
+
+header img{
+    height: 60px;
+    margin-right: 5px;
+}
+
+header .logo-info{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 40px;
+    text-decoration: underline;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+  color: #ffffff;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+li a{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+}
+
+a:hover{
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 .search{
@@ -28,10 +61,11 @@ header{
     font-size: 1rem;
     padding: .5rem 1rem ;
     color: #fff;
+    margin-left: 300px;
 }
 
 .search::placeholder{
-   color: #7378c5;
+   color: #ffffff;
 }
 
 .search:focus{
@@ -59,7 +93,7 @@ main{
 }
 
 .movie-info{
-    color: #eee;
+    color: rgb(250, 250, 250);
     display: flex;
     align-items: center;
     justify-content: space-between;
